@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/HeaderStyle.css">
+	 <link href='https://fonts.googleapis.com/css?family=Roboto:400,270,400italic,270italic,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../JS/register.js" ></script>
+	<script language="javascript" type="text/javascript" src="asd.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<img src="../Images/logo.jpeg" alt="Logo" width="123px" height="100px"></img>
+		<h1>Registration Page</h1>
+	</div>
+
+	<ul>
+  		<li><a href="Basic.html">Home</a></li>
+	</ul>
+
+
+		<form name="myForm" onsubmit="return validateForm()" method="GET" action="dashBoard.html">
+		<br>
+		<br>
+			<div class="container">	
+				<table align="center">
+				<tr>
+					<td height="27">Name</td>
+					<td height="27"><input type="text" name="name" required id="name"></td>
+				</tr>
+				 <tr>
+ 					<td height="27">Email</td>
+					<td height="27"><input type="email" name="email" required id="email"></td>
+				</tr>
+				<tr>
+					<td height="27">Username</td>
+					<td height="27"><input type="text" name="username" required id="username"></td>
+				</tr>
+				<tr>
+					<td height="27">Password</td>
+					<td height="27"><input type="password" name="Password" required id="Password"></td> 
+				</tr>
+				<tr>
+					<td height="27">Confirm Password</td>
+					<td height="27"><input type="password" name="cPassword" required id="cPassword"></td>
+				</tr>
+				<tr>
+					<td height="27">Country</td>
+					<td height="27">
+						<select name="country" id="country">  
+   							<option selected="" value="Default" required>(Please select a country)</option>  
+    						<option value="AF">Australia</option>  
+    						<option value="AL">Canada</option>  
+    						<option value="DZ">India</option>  
+   							<option value="AS">Russia</option>  
+    						<option value="AD">USA</option>  
+    					</select>
+    				</td>
+				</tr>
+				<tr>
+					<td height="27">Sex</td>
+					<td height="27">
+						<input type="radio" name="gender" value="Male" id="gender"> Male
+						<input type="radio" name="gender" value="Female"> Female
+    				</td>
+    			</tr>
+				<tr>
+					<td height="27">Language</td>
+					<td height="27">
+						<input type="checkbox" name="language" value="en" id="language"/><span>English</span> 
+    					<input type="checkbox" name="language" value="noen" /><span>Non English</span>
+					</td>
+				</tr>
+					<tr>
+					<td height="27">Image</td>
+					<td height="27">
+						<input type="file" name="pic" accept="image/*" required id="image">
+					</td>
+				</tr>
+
+			</table>
+	
+			<center>
+
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  				<input type="submit" value="Submit" class="myButton" onclick="return testJS()">&nbsp;&nbsp;&nbsp;
+  				<input type="reset" value="Reset" class="myButton">
+  				
+			</center>
+			</div>
+		</form> 
+	
+	<div id="footer">
+	<center>
+		&copy; Copyright 2015 All Rights Reserved 
+		</center>
+	</div>
+</body>
+</html>
