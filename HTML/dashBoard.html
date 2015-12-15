@@ -32,11 +32,16 @@
 </body>
 </html>
 
+<<<<<<< HEAD
 <!-- <html>
+=======
+ <!-- <html>
+>>>>>>> 8573a4afa7cb8248504f29ccb9eee3cdc93f707e
   <head>
      <script type="text/javascript">
        function getQuerystring(){
          var q=document.location.toString();
+<<<<<<< HEAD
            alert(q);
         a=q.split("?");
         b=a[1].split("&");
@@ -54,6 +59,13 @@ alert(b);
          for(i=0;i<q.length;i++){
            tmp=q[i].split("=")
 
+=======
+         q=q.split("?");
+         q=q[1].split("&");
+         var str=""
+         for(i=0;i<q.length;i++){
+           tmp=q[i].split("=")
+>>>>>>> 8573a4afa7cb8248504f29ccb9eee3cdc93f707e
            str+=i +". querystring name is '"+tmp[0]+"' value is '"+tmp[1]+"'<br />"
                                           }
          document.getElementById("results").innerHTML=str

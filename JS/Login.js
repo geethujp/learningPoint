@@ -12,10 +12,17 @@ function validateLoginForm() {
         alert("Password must be filled out");
         return false;
     }
+<<<<<<< HEAD
    if(a!="geethu"&&b!="123")
    {
     alert("Access Denied");
     return false;
+=======
+   if(a==geethu&&b==123)
+   {
+    alert("Access Granted");
+    return true;
+>>>>>>> 8573a4afa7cb8248504f29ccb9eee3cdc93f707e
    }
   
 }
