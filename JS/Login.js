@@ -12,10 +12,10 @@ function validateLoginForm() {
         alert("Password must be filled out");
         return false;
     }
-   if(a==geethu&&b==123)
+   if(a!="geethu"&&b!="123")
    {
-    alert("Access Granted");
-    return true;
+    alert("Access Denied");
+    return false;
    }
   
 }
